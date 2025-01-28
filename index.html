@@ -8,13 +8,19 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-        h1 {
-            color: #0056b3;
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
         }
         .container {
             max-width: 800px;
@@ -23,6 +29,9 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .container p {
+            font-size: 1.2em;
+        }
         .container a {
             color: #0056b3;
             text-decoration: none;
@@ -30,14 +39,35 @@
         .container a:hover {
             text-decoration: underline;
         }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #0056b3;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Welcome to Apps Outa</h1>
+    </header>
+    <div class="container">
         <p>At Apps Outa, our main objective is to create innovative and user-friendly applications for mobile platforms, including Android and iOS. We are dedicated to enhancing the mobile experience by developing apps that are not only functional but also enjoyable to use.</p>
-        <p><a href="privacy-policy.html">Read our Privacy Policy</a></p>
         <p><a href="https://play.google.com/store/apps/dev?id=4669456440696518475&hl=en" target="_blank">Check out our apps on Google Play</a></p>
+        <p><a href="https://apps.apple.com/us/app/mobarakati/id1509826482" target="_blank">Check out our apps on the Apple App Store</a></p>
     </div>
+    <footer>
+        <p><a href="privacy-policy.html">Read our Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
