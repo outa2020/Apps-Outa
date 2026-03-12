@@ -39,6 +39,44 @@
         .container a:hover {
             text-decoration: underline;
         }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .app-card {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-4px);
+        }
+        .app-card h3 {
+            color: #0056b3;
+            margin: 0 0 10px;
+            font-size: 1em;
+        }
+        .app-card .badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #0056b3;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 0.85em;
+            text-decoration: none;
+        }
+        .app-card .badge:hover {
+            background-color: #003f8a;
+        }
+        .featured {
+            border: 2px solid #0056b3;
+        }
         footer {
             text-align: center;
             padding: 20px 0;
@@ -66,11 +104,30 @@
     </header>
     <div class="container">
         <p>At Apps Outa, our main objective is to create innovative and user-friendly applications for mobile platforms, including Android and iOS. We are dedicated to enhancing the mobile experience by developing apps that are not only functional but also enjoyable to use.</p>
-        <p><a href="https://play.google.com/store/apps/dev?id=4669456440696518475&hl=en" target="_blank">Check out our apps on Google Play</a></p>
-        <p><a href="https://apps.apple.com/us/app/mobarakati/id1509826482" target="_blank">Check out our apps on the Apple App Store</a></p>
+        <p><a href="https://play.google.com/store/apps/dev?id=4669456440696518475&hl=en" target="_blank">Check out all our apps on Google Play</a></p>
+        <p><a href="https://apps.apple.com/us/iphone/search?term=mohamed%20outahajala" target="_blank">Check out all our apps on the Apple App Store</a></p>
+
+        <h2>Our Apps</h2>
+        <div class="apps-grid">
+            <div class="app-card featured">
+                <h3>🍽️ Meal Prep: Smart Recipes</h3>
+                <p>Plan your meals smartly with curated recipes and prep guides.</p>
+                <a class="badge" href="https://apps.apple.com/us/app/meal-prep-smart-recipies/id6748040722" target="_blank">View on App Store</a>
+            </div>
+            <div class="app-card">
+                <h3>🗺️ Local Garage Sales Map Finder</h3>
+                <p>Find nearby garage sales easily with an interactive map.</p>
+                <a class="badge" href="https://apps.apple.com/us/app/local-garage-sales-map-finder/id6746351001" target="_blank">View on App Store</a>
+            </div>
+            <div class="app-card">
+                <h3>🔍 Face Traits Reader</h3>
+                <p>Discover personality insights through facial feature analysis.</p>
+                <a class="badge" href="https://apps.apple.com/us/app/face-traits-reader/id6740182212" target="_blank">View on App Store</a>
+            </div>
+        </div>
     </div>
     <footer>
-        <p><strong>Developer:</strong> Mohamed Outahajala</p>
+        <p><strong>Developer Account:</strong> Mohamed Outahajala</p>
         <p>Email: <a href="mailto:mohamed.outahajala@gmail.com">mohamed.outahajala@gmail.com</a></p>
         <p>Address: D7 Riyad Essalam, Hay Mahjoub, Temara 12010, Morocco</p>
         <p><a href="privacy-policy.html">Read our Privacy Policy</a></p>
